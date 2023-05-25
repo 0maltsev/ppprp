@@ -12,6 +12,8 @@ spec:
         protocol: HTTP
       hosts:
         - api.agify.io
+      tls:
+        mode: PASSTHROUGH
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService

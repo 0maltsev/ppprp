@@ -8,8 +8,11 @@ spec:
   servers:
   - port:
       number: 80
-      name: http
-      protocol: HTTP
+      name: https
+      protocol: HTTPS
+    tls:
+      mode: MUTUAL
+      credentialName: credential
     hosts:
     - "*"
 ---
